@@ -1,0 +1,99 @@
+.header{
+    min-height: 400px;
+    background-image: url("/content/header_background.png");
+    background-size: contain;
+    display: flex;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.header__container{
+    display: flex;
+    flex-direction: column;
+}
+.header__menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 49px 0 0;
+}
+.header__menu li:hover{
+    opacity: 0.8;
+}
+.header__wrapper{
+    flex-grow: 1;
+    background-image: url(/content/header_element.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right ;
+    margin-top: 115px;
+    padding-bottom: 90px;
+    margin-bottom: 93px;
+}
+.header__title{
+    max-width: 506px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+.header__text{
+    margin-top: 39px;
+    max-width: 425px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.header__button{
+    margin-top: 70px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px 50px;
+    display: inline-block;
+}
+.header__button:hover{
+    background: #418bcb
+}
+.main__smart-home{
+    position: relative;
+}
+.smart-home__img{
+    width: 100%;
+    object-fit: cover;
+}
+.smart-home__text{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    top: 64px;
+    right: 64px;
+}
+.main__apps-wrapper{
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+}
+.main__app{
+    height: 200px;
+    background-color: blue;
+    flex-grow: 1;
+}
