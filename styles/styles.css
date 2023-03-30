@@ -1,6 +1,6 @@
 .header{
     min-height: 400px;
-    background-image: url("/content/header_background.png");
+    background-image: url("../content/header_background.png");
     background-size: contain;
     display: flex;
 }
@@ -24,7 +24,7 @@
 }
 .header__wrapper{
     flex-grow: 1;
-    background-image: url(/content/header_element.png);
+    background-image: url("../content/header_element.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right ;
