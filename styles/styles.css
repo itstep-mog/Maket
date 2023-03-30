@@ -70,6 +70,118 @@
 .header__button:hover{
     background: #418bcb
 }
+.what-we-do{
+    margin-top: 64px;
+}
+.what-we-do__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.what-we-do__card {
+    width: 360px;
+    min-height: 460px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding-top: 44px;
+    margin-top: 64px;
+}
+.what-we-do__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.card__img {
+    display: block;
+    margin: 0 auto;
+}
+.card__img_left {
+    margin: 0 66px;
+}
+.card__img_right {
+    margin: 0 80px;
+}
+.card__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin: 52px 32px 14px 32px;
+}
+.card__descr {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+    margin: 0 32px;
+    width: 294px;
+}
+.card__descr_sml {
+    width: 269px;
+}
+.card__link {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+    margin: 30px 0 0 32px;
+    position: relative;
+    width: 100px;
+}
+.card__link:after {
+    content: '';
+    background: url("/content/right.svg") no-repeat;
+    position: absolute;
+    top: 7px;
+    left: 103px;
+    width: 16px;
+    height: 100%;
+}
+.card__link:hover {
+    color: #0570d2;
+}
+.finished_project {
+    margin-bottom: 112px;
+}
+.main__finished-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 32px;
+}
+.main__finished-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    width: 750px;
+    margin: 0 auto 64px auto;
+}
 .main__smart-home{
     position: relative;
 }
@@ -87,13 +199,26 @@
     top: 64px;
     right: 64px;
 }
+
 .main__apps-wrapper{
     margin-top: 32px;
     display: flex;
     gap: 32px;
 }
 .main__app{
-    height: 200px;
-    background-color: blue;
     flex-grow: 1;
+    position: relative;
+}
+
+.sparklite__text, .car__text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 32px;
+    left: 32px;
 }
