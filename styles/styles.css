@@ -1,99 +1,460 @@
 .header{
-    min-height: 400px;
-    background-image: url("/content/header_background.png");
-    background-size: contain;
-    display: flex;
-}
-.container{
-    width: 1140px;
+    /*фон в png, т.к нужна прозрачность*/
+    min-height: 400px;/*минимальная высота*/
+    background-image: url("../content/header_background.png");
+    background-size: contain; /*для видимости картинки*/
+    display: flex;/*растянулись элементы*/
+    width: 1366px;
     margin: 0 auto;
 }
-.header__container{
-    display: flex;
-    flex-direction: column;
+.container{ /*задан размер для верхней части для всех элементов*/
+    width: 1140px;/*ширина*/
+    margin: 0 auto; /*центрировать*/
 }
-.header__menu{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 49px 0 0;
+.header__container{ /*заданы одни свойства*/
+    display: flex; /*логотипы стали в ряд*/
+    flex-direction: column; /*стали друг под другом*/
+}
+.header__menu{ /*логотипы*/
+    list-style-type: none; /*убрать маркеры*/
+    display: flex; /*элементы стали рядом*/
+    justify-content: space-between; /*разнести элементы по краям*/
+    padding: 0;/*убрать боковой padding*/
+    margin: 49px 0 0;/*отступ сверху*/
 }
 .header__menu li:hover{
-    opacity: 0.8;
+    opacity: 0.8;/*осветление логотипа*/
 }
 .header__wrapper{
-    flex-grow: 1;
-    background-image: url(/content/header_element.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right ;
-    margin-top: 115px;
-    padding-bottom: 90px;
-    margin-bottom: 93px;
+    flex-grow: 1;/*растягивает*/
+    background-image: url("../content/header_element.png");
+    background-repeat: no-repeat;/*не повторялся*/
+    background-size: contain;/*картинка попадала по высоте*/
+    background-position: right ;/*справо*/
+    margin-top: 115px;/*отступ*/
+    padding-bottom: 90px;/*отступ*/
+    margin-bottom: 93px;/*отступ*/
 }
-.header__title{
-    max-width: 506px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 64px;
-    line-height: 74px;
-    letter-spacing: 0.04em;
+.header__title{/*название*/
+    max-width: 506px;/*максимальная ширина*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 300;/*толщина*/
+    font-size: 64px;/*размер текста*/
+    line-height: 74px;/*интервал между буквами*/
+    letter-spacing: 0.04em;/*междустрочный интервал*/
+    color: #1F3F68;/*цвет*/
+}
+.header__text{/*текст*/
+    margin-top: 39px;/*отступ*/
+    max-width: 425px;/*максимальная шрина*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 400;/*толщина*/
+    line-height: 26px;/*интервал между буквами*/
+    letter-spacing: 0.05em;/*междустрочный интервал*/
+    color: #1F3F68;/*междустрочный интервал*/
+    opacity: 0.6;/*прозрачность*/
+}
+.header__button{/*кнопка*/
+    margin-top: 70px;/*отступ от кнопочки до текста*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;/*междустрочный интервал*/
+    color: #FFFFFF;/*междустрочный интервал*/
+    background: #5A98D0;/*цвет background*/
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    text-decoration: none;/*убрать подчеркивание*/
+    padding: 15px 50px;/*отступ сверху и снизу 15px, слева и справо 50px*/
+    display: inline-block;/*строчно-блочный элемент, чтобы не налазила на текст*/
+}
+.header__button:hover{
+    background: #418bcb/*свойство наведения на кнопку*/
+}
+.main{
+    display: flex;/*растянулись элементы*/
+}
+.main__container{ /*заданы одни свойства*/
+    display: flex; /*логотипы стали в ряд*/
+    flex-direction: column; /*стали друг под другом*/
+    height: 585px;
+}
+.main__text{
+    margin: 64px 115px 64px 114px ;/*отступы*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 300;/*толщина*/
+    font-size: 36px;/*размер текста*/
+    line-height: 46px;/*интервал между буквами*/
+    text-align: center;
+    letter-spacing: 0.05em;/*междустрочный интервал*/
+    color: #000000;
+}
+.main__client{
+    display: flex;
+    justify-content: space-between;
+    height: 480px;
+}
+.main__make-business{
+    /* position: relative;*/
+    margin: 0 32px 0 0;/*отступ*/
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px
+    rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+.make-business__img{
+    margin: 44px 117px 52px 70px;/*отступ*/
+    width: 172px;
+    height: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.make-business__title{
+    margin: 0 44px 14px 32px;/*отступ*/
+    max-width: 283px;/*максимальная ширина*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 400;/*толщина*/
+    font-size: 20px;/*размер текста*/
+    line-height: 30px;/*интервал между буквами*/
+    letter-spacing: 0.05em;
     color: #1F3F68;
 }
-.header__text{
-    margin-top: 39px;
-    max-width: 425px;
-    font-family: 'Roboto', sans-serif;
+.make-business__text{
+    margin: 0 59px 30px 32px;/*отступ*/
+    max-width: 268px;/*максимальная ширина*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
     font-weight: 400;
+    font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.05em;
     color: #1F3F68;
     opacity: 0.6;
 }
-
-.header__button{
-    margin-top: 70px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-
-    background: #5A98D0;
-    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-    border-radius: 10px;
-    text-decoration: none;
-    padding: 15px 50px;
-    display: inline-block;
+.make-business__lear-more{
+    display: flex; /*элементы стали рядом*/
 }
-.header__button:hover{
-    background: #418bcb
+.lear-more__text{
+    margin: 0 0 0 32px;
+    font-family:'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+}
+.lear-more__vector{
+    margin: 8px 0px 47px 32px;
+    opacity: 0.6;
+}
+.lear-more__vector:hover{
+    width: 20px;
+    height: 19px;
+    font-weight: bold;
+    opacity: 1;
+}
+.main__bring-technology{
+    margin: 0 32px 0 0;
+    width: 358px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px
+    rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+.make-technology__img{
+    margin: 44px 110px 45px 116px;/*отступ*/
+    width: 132px;
+    height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.make-technology__title{
+    margin: 0 32px 15px 32px;/*отступ*/
+    max-width: 294px;/*максимальная ширина*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 400;/*толщина*/
+    font-size: 20px;/*размер текста*/
+    line-height: 30px;/*интервал между буквами*/
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+}
+.make-technology__text{
+    margin: 0 32px 28px 32px;/*отступ*/
+    max-width: 294px;/*максимальная ширина*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+.main__digital-product{
+    width: 359px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px
+    rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+.make-digital-product__img{
+    margin: 49px 117px 49px 95px;/*отступ*/
+    width: 147px;
+    height: 119px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.make-digital-product__title{
+    margin: 0 32px 15px 32px;/*отступ*/
+    max-width: 295px;/*максимальная ширина*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 400;/*толщина*/
+    font-size: 20px;/*размер текста*/
+    line-height: 30px;/*интервал между буквами*/
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+}
+.make-digital-product__text{
+    margin: 0 32px 27px 32px;/*отступ*/
+    max-width: 295px;/*максимальная ширина*/
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+.main__finished-title{
+    margin: 64px 0 0;
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+.main__finished-subtitle{
+    margin: 32px 195px 32px;
+    width: 750px;
+    height: 52px;
+    font-family: 'Roboto', sans-serif;/*тип шрифта Roboto*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align:  center;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #222222;
 }
 .main__smart-home{
-    position: relative;
+    position: relative;/*чтобы текст не вылетел за приделы блока*/
 }
 .smart-home__img{
     width: 100%;
-    object-fit: cover;
+    object-fit: cover;/*изменяться в зависимости от ширины контейнера*/
 }
-.smart-home__text{
+.smart-home__text{/*текст в картинке*/
     position: absolute;
     font-family: 'Roboto', sans-serif;
     font-size: 32px;
     line-height: 46px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
-    top: 64px;
-    right: 64px;
+    top: 64px;/*сверху*/
+    right: 64px;/*справа*/
 }
 .main__apps-wrapper{
-    margin-top: 32px;
+    position: relative;
+    margin-top: 32px;/*отступ сверху*/
+    display:flex;/*чтобы элементы стали рядом*/
+    gap: 32px;/*растояние между элементами*/
+}
+.main__sparklite-app{
+    height: 417px;
+    width: 554px;
+    display:block;
+    position: relative;
+    border-radius: 10px;
+    background:
+            url("../content/main_background.png") center no-repeat,
+            url("../content/sparklite_app.png") 0  no-repeat;
+}
+.sparklite-app__text{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    top: 32px;/*сверху*/
+    right: 339px;/*справа*/
+}
+.main__car-app{
+    height: 417px;
+    width: 554px;
+    display:block;
+    position: relative;
+    border-radius: 10px;
+    background:
+            url("../content/main_background.png") center no-repeat,
+            url("../content/сar-кapetition_app.png") 0  no-repeat;
+}
+.car-app__text{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    top: 32px;/*сверху*/
+    left: 32px;
+}
+.footer {
+    background: #316099;
+    width: 1366px;
+    margin: 0 auto;
+}
+.footer__container{
+    position: relative;
+    display: flex; /*логотипы стали в ряд*/
+    flex-direction: column; /*стали друг под другом*/
+    margin: 1300px 0 0;
+
+}
+.footer__wrapper{
+    height: 391px;
+}
+.footer__title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 91px 0 0;
+    padding-left: 113px;
+    width: 341px;
+    height: 92px;
+}
+.footer__button{
+    position: relative;
+    background: #5A98D0;
+    width: 237px;
+    height: 56px;
+    display:flex;
+    margin: 0 0 0 1015px;
+}
+.button{/*кнопка*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;/*убрать подчеркивание*/
+    padding: 15px 79px;
+}
+.footer__button:hover{
+    background: #418bcb/*свойство наведения на кнопку*/
+}
+.footer__text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    padding-left: 113px;
+    width: 495px;
+    height: 80px;
+}
+.footer_line{
+    border: 1px solid #FFFFFF;
+    opacity: 0.4;
+    margin: 0 0 64px;
+    width: 2000px ;
+}
+.footer__date{
     display: flex;
-    gap: 32px;
+    justify-content: space-between;
+    min-height: 176px;
+    position: relative;
 }
-.main__app{
-    height: 200px;
-    background-color: blue;
-    flex-grow: 1;
+.footer__data-number-1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    margin: 4px;
+    left: 113px;
 }
+.footer__data-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 155px;
+    width: 315px;
+}
+.footer__data-number-2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    margin: 4px;
+    left: 504px;
+}
+.footer__data-telephone{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 546px;
+    width: 316px;
+}
+.footer__data-number-3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    margin: 4px;
+    left: 894px;
+}
+.footer__data-email{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 936px;
+    width: 316px;
+}
+.footer__reserved{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+    width: 310px;
+    margin: 112px 0 64px 113px;
+}
+
+
+
