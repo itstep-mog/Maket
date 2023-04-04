@@ -222,3 +222,104 @@
     top: 32px;
     left: 32px;
 }
+
+.footer {
+    background-color: #316099;
+    padding-top: 90px;
+    padding-bottom: 64px;
+}
+.footer__title {
+    width: 340px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+
+}
+.footer__text {
+    width: 495px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+
+}
+.footer__button {
+    background: #5A98D0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 80px;
+    display: block;
+    align-self: center;
+
+}
+.footer__button:hover {
+    background: #4192d9;
+}
+.footer__wrapper {
+    display: flex;
+    gap: 412px;
+    margin-bottom: 96px;
+}
+
+.footer__divider {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 64px;
+}
+
+.footer__item__number {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.footer__item__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    width: 240px;
+}
+.footer__item {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.footer__copy {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
