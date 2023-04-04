@@ -273,7 +273,7 @@
 }
 .footer__wrapper {
     display: flex;
-    gap: 412px;
+    justify-content: space-between;
     margin-bottom: 96px;
 }
 
