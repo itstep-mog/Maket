@@ -285,34 +285,49 @@
     margin-bottom: 64px;
 }
 
-.footer__item__number {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-}
-.footer__item__text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    width: 240px;
-}
-.footer__item {
-    display: flex;
-    gap: 20px;
-}
-
 .footer__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 64px;
+    gap: 10px;
+    padding-left: 19px;
+}
+
+.footer__list__item {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    max-width: 250px;
+    padding-left: 19px;
+    list-style-type: numbers;
+}
+.footer__list .footer__list__item:nth-child(2) {
+margin-left: 116px;
+}
+.footer__list .footer__list__item:nth-child(3) {
+    margin-left: 216px;
+}
+.contacts-list .footer__list__item {
+    list-style-type: none;
+    position: relative;
+    padding-left: 19px;
+}
+.contacts-list .footer__list__item:nth-child(1)::before {
+    content: "A.";
+    position: absolute;
+    left: -19px;
+}
+.contacts-list .footer__list__item:nth-child(2)::before {
+    content: "T.";
+    position: absolute;
+    left: -19px;
+}
+.contacts-list .footer__list__item:nth-child(3)::before {
+    content: "E.";
+    position: absolute;
+    left: -19px;
 }
 
 .footer__copy {
@@ -347,6 +362,8 @@
     letter-spacing: 0.04em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    margin-top: 54px;
+    padding-top: 51px;
 }
 
 .contacts__description {
@@ -377,13 +394,9 @@
     margin-top: 56px;
 }
 .contacts-info__address-text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    letter-spacing: 0.04em;
-    color: #1F3F68;
     opacity: 0.6;
     margin-top: 24px;
     width: 300px;
@@ -400,13 +413,9 @@
     margin-bottom: 24px;
 }
 .contacts-info__tel {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    letter-spacing: 0.04em;
-    color: #1F3F68;
     opacity: 0.6;
     margin-top: 16px;
     position: relative;
@@ -433,13 +442,9 @@
     margin-bottom: 24px;
 }
 .contacts-info__site, .contacts-info__email {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    letter-spacing: 0.04em;
-    color: #1F3F68;
     opacity: 0.6;
     margin-top: 16px;
     padding-left: 41px;
@@ -478,7 +483,7 @@
 .contacts__form__container {
     margin: 56px;
 }
-.contacts__form form {
+.form {
     display: flex;
     flex-direction: column;
 }
@@ -486,7 +491,7 @@
     align-self: center;
 }
 
-.contacts__form__legend {
+.contacts__form__message {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -531,7 +536,6 @@
 
 .contacts__form__textarea {
     display: block;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -549,7 +553,6 @@
 }
 
 .contacts__form__textarea::placeholder {
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;

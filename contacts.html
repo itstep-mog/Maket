@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -11,10 +12,10 @@
     <div class="container">
         <ul class="header__menu">
             <li>
-                <a href="#"><img src="content/logo.svg" alt="logo"></a>
+                <a href="index.html"><img src="content/logo.svg" alt="logo"></a>
             </li>
             <li>
-                <a href="#"><img src="content/contacts.svg" alt="contacts"></a>
+                <a href="contacts.html"><img src="content/contacts.svg" alt="contacts"></a>
             </li>
         </ul>
     </div>
@@ -44,8 +45,8 @@
         </div>
         <div class="contacts__form">
             <div class="contacts__form__container">
-            <legend class="contacts__form__legend">SEND US MESSAGE</legend>
-            <form action="#">
+            <div class="contacts__form__message">SEND US MESSAGE</div>
+            <form class="form" action="#">
                 <label class="contacts__form__label">
                     Full Name
                     <input class="contacts__form__input" placeholder="Your Name" type="text">
@@ -79,20 +80,11 @@
         </div>
         <div class="footer__divider"></div>
         <div class="container">
-            <div class="footer__list">
-                <div class="footer__item">
-                    <div class="footer__item__number">A.</div>
-                    <div class="footer__item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                </div>
-                <div class="footer__item">
-                    <div class="footer__item__number">T.</div>
-                    <div class="footer__item__text">+7-812-7313-4321</div>
-                </div>
-                <div class="footer__item">
-                    <div class="footer__item__number">E.</div>
-                    <div class="footer__item__text">hello.site@gmail.com</div>
-                </div>
-            </div>
+            <ol class="footer__list contacts-list">
+                <li class="footer__list__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li class="footer__list__item">+7-812-7313-4321</li>
+                <li class="footer__list__item">hello.site@gmail.com</li>
+            </ol>
             <div class="footer__copy">2020 All rights reserved.</div>
         </div>
     </div>
