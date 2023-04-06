@@ -1,0 +1,87 @@
+@media (max-width: 1399px) {
+    .container {
+    width: 1050px;
+}
+
+    .sparklite__img, .car__img {
+        width: 100%;
+    }
+    .card__title {
+        font-size: 19px;
+    }
+}
+@media (max-width: 1199px) {
+    .container {
+        width: 900px;
+    }
+
+    .header__wrapper {
+        background-size: 50%;
+    }
+
+    .footer__list .footer__list__item:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .footer__list .footer__list__item:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .footer__list {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        width: 690px;
+    }
+    .header__title {
+        max-width: 512px;
+    }
+    .header__wrapper {
+        background-size: 45%;
+        background-position-y: 89%;
+    }
+    .what-we-do__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .what-we-do__card {
+        flex-basis: initial;
+    }
+    .main__finished-title {
+        margin-top: 127px;
+    }
+    .footer {
+        padding-top: 47px;
+    }
+    .footer__container {
+        width: 520px;
+        margin: 0 124px;
+    }
+    .footer__text {
+        max-width: 336px;
+    }
+    .footer__button {
+        padding: 3px 30px;
+        margin-top: 52px;
+    }
+    .footer__wrapper {
+        margin-bottom: 64px;
+    }
+    .footer__list {
+        flex-direction: column;
+    }
+    .footer__list__item {
+        max-width: initial;
+        padding-left: 36px;
+    }
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 575px) {
+
+}
