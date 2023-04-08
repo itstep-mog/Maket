@@ -371,7 +371,7 @@ margin-left: 116px;
 }
 
 .contacts__description {
-    width: 780px;
+    max-width: 780px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
