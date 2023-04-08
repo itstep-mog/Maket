@@ -217,6 +217,7 @@
     }
     .footer__list__item {
         padding-left: 21px;
+        max-width: 310px;
     }
     .footer__list {
         margin-bottom: 37px;
@@ -224,4 +225,69 @@
     .footer__copy {
         text-align: center;
     }
+    .contacts__title {
+        margin-top: 33px;
+        padding-top: 51px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .contacts {
+        background-position-x: 53%;
+        padding-bottom: 61px;
+    }
+    .contacts__description {
+        font-size: 16px;
+        max-width: 341px;
+    }
+    .main-contacts {
+        padding-top: 46px;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+    .contacts-info__address {
+        margin-top: 64px;
+    }
+    .contacts-info__phone {
+        margin-top: 32px;
+    }
+    .contacts-info__service {
+        margin-top: 34px;
+    }
+    .contacts__form {
+        max-width: 340px;
+        min-height: 442px;
+    }
+    .contacts__form__container {
+        min-height: 514px;
+    }
+    .contacts__form__message {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .contacts__form__label {
+        font-size: 14px;
+        margin-top: 31px;
+        line-height: 16px;
+    }
+    .contacts__form__input, .contacts__form__textarea {
+        font-size: 14px;
+        width: 230px;
+        padding: 14px 16px 0 21px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .contacts__form__textarea::placeholder, .contacts__form__input::placeholder{
+        padding: 11px 16px 0 0
+    }
+    .contacts__form__textarea {
+        height: 77px;
+    }
+    .contacts__form__button {
+        margin-top: 46px;
+        padding: 10px 105px;
+    }
+    .map {
+        margin-bottom: 32px;
+    }
+
 }

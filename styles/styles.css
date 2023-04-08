@@ -480,12 +480,13 @@ margin-left: 116px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 540px;
-    height: 800px;
+    max-width: 540px;
+    min-height: 800px;
 }
 
 .contacts__form__container {
-    margin: 56px;
+    padding: 36px;
+    box-sizing: border-box;
 }
 .form {
     display: flex;
