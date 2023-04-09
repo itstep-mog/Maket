@@ -581,7 +581,12 @@ margin-left: 116px;
     border: none;
     padding: 23px 183px;
     text-transform: uppercase;
+    cursor: pointer;
 }
+.contacts__form__button:hover {
+    background: #418bcb
+}
+
 .map__iframe {
     width: 100%;
     height: 480px;
