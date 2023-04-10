@@ -255,11 +255,9 @@
     }
     .contacts__form {
         max-width: 340px;
-        min-height: 442px;
-    }
-    .contacts__form__container {
         min-height: 514px;
     }
+
     .contacts__form__message {
         font-size: 16px;
         margin-bottom: 0;

@@ -148,6 +148,7 @@
     margin-top: 30px;
     position: relative;
     max-width: 100px;
+    opacity: 0.75;
 }
 .card__link:after {
     content: '';
@@ -159,7 +160,7 @@
     height: 100%;
 }
 .card__link:hover {
-    color: #0570d2;
+    opacity: 1;
 }
 .finished_project {
     margin-bottom: 112px;
@@ -272,10 +273,11 @@
     padding: 15px 80px;
     display: block;
     align-self: center;
+    opacity: 0.7;
 
 }
 .footer__button:hover {
-    background: #4192d9;
+    opacity: 1;
 }
 .footer__wrapper {
     display: flex;
@@ -417,6 +419,9 @@ margin-left: 116px;
     margin-bottom: 24px;
 }
 .contacts-info__tel {
+    display: block;
+    text-decoration: none;
+    color: #1F3F68;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
@@ -424,6 +429,9 @@ margin-left: 116px;
     margin-top: 16px;
     position: relative;
     padding-left: 41px;
+}
+.contacts-info__tel:hover {
+    opacity: 1;
 }
 .contacts-info__tel:before {
     content: '';
@@ -446,6 +454,9 @@ margin-left: 116px;
     margin-bottom: 24px;
 }
 .contacts-info__site, .contacts-info__email {
+    display: block;
+    text-decoration: none;
+    color: #1F3F68;
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
@@ -453,6 +464,9 @@ margin-left: 116px;
     margin-top: 16px;
     padding-left: 41px;
     position: relative;
+}
+.contacts-info__site:hover, .contacts-info__email:hover {
+    opacity: 1;
 }
 
 .contacts-info__site:before {
@@ -482,20 +496,12 @@ margin-left: 116px;
     flex-direction: column;
     max-width: 540px;
     min-height: 800px;
-}
-
-.contacts__form__container {
     padding: 36px;
     box-sizing: border-box;
-}
-.form {
-    display: flex;
-    flex-direction: column;
 }
 .contacts__form__button {
     align-self: center;
 }
-
 .contacts__form__message {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -582,9 +588,10 @@ margin-left: 116px;
     padding: 23px 183px;
     text-transform: uppercase;
     cursor: pointer;
+    opacity: 0.8;
 }
 .contacts__form__button:hover {
-    background: #418bcb
+    opacity: 1;
 }
 
 .map__iframe {
