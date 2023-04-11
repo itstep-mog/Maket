@@ -269,13 +269,12 @@
     }
     .contacts__form__input, .contacts__form__textarea {
         font-size: 14px;
-        width: 230px;
-        padding: 14px 16px 0 21px;
+        padding: 14px 16px 14px 21px;
         margin-bottom: 0;
         margin-top: 0;
     }
     .contacts__form__textarea::placeholder, .contacts__form__input::placeholder{
-        padding: 11px 16px 0 0
+        padding: 11px 16px 100px 0
     }
     .contacts__form__textarea {
         height: 77px;
